@@ -1,13 +1,196 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="resume">
+  <section class="resume__header">
+    <article class="resume__photo">
+      <img class="resume__photo-img" src="./img/profileImg.jpg" alt="avatar" />
+    </article>
+    <article class="resume__intro">
+      <p class="resume__intro-greeting editable" data-key="greeting">Hello 👋🏻 I'm</p>
+      <div class="resume__intro-box">
+        <p class="resume__intro-name editable" data-key="name">Karthik SR</p>
+        <p class="resume__intro-role editable" data-key="role">UX/UI Designer</p>
+      </div>
+    </article>
+    <article class="resume__languages">
+      <h2 class="resume__languages-title editable" data-key="languages-title">Languages</h2>
+      <div class="resume__flex">
+        <div class="resume__languages-list">
+          <p class="resume__language editable" data-key="language-1">English</p>
+          <p class="resume__language editable" data-key="language-2">Malayalam</p>
+          <p class="resume__language editable" data-key="language-3">Hindi</p>
+        </div>
+        <div class="resume__languages-progress">
+          <progress class="resume__progress" value="100" max="100" data-key="progress-1"></progress>
+          <progress class="resume__progress" value="100" max="100" data-key="progress-2"></progress>
+          <progress class="resume__progress" value="75" max="100" data-key="progress-3"></progress>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="resume__experience-tools">
+    <article class="resume__experience">
+      <h2 class="resume__section-title editable" data-key="experience-title">Experience</h2>
+
+      <div class="resume__experience-item active">
+        <p class="resume__experience-date editable" data-key="exp-date-1">2017 - Present</p>
+        <div class="resume__experience-info">
+          <div class="resume__experience-header">
+            <p class="resume__position editable" data-key="position-1">Marketing Manager</p>
+            <p class="resume__company editable" data-key="company-1">Freelance</p>
+          </div>
+          <ul class="resume__tasks">
+            <li class="resume__task editable" data-key="task-1-1">Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+            <li class="resume__task editable" data-key="task-1-2">SEO Content Creation for Blogs, Website, Social media</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume__experience-item">
+        <p class="resume__experience-date editable" data-key="exp-date-2">Jun. 2023 - Present</p>
+        <div class="resume__experience-info">
+          <div class="resume__experience-header">
+            <p class="resume__position editable" data-key="position-2">Marketing Manager</p>
+            <p class="resume__company editable" data-key="company-2">Freelance</p>
+          </div>
+          <ul class="resume__tasks">
+            <li class="resume__task editable" data-key="task-2-1">Development of internal projects from scratch, product design of brands</li>
+            <li class="resume__task editable" data-key="task-2-2">Landing page, webapps and hybrid apps</li>
+            <li class="resume__task editable" data-key="task-2-3">Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume__experience-item">
+        <p class="resume__experience-date editable" data-key="exp-date-3">Jun. 2023 - Present</p>
+        <div class="resume__experience-info">
+          <div class="resume__experience-header">
+            <p class="resume__position editable" data-key="position-3">Marketing Manager</p>
+            <p class="resume__company editable" data-key="company-3">Freelance</p>
+          </div>
+          <ul class="resume__tasks">
+            <li class="resume__task editable" data-key="task-3-1">Provide administrative support to lawyer and enhance office effectiveness</li>
+            <li class="resume__task editable" data-key="task-3-2">Handle communication with clients, witnesses etc.</li>
+            <li class="resume__task editable" data-key="task-3-3">Prepare case briefs and summarize depositions, interrogatories and testimony</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="resume__tools">
+      <h2 class="resume__section-title editable" data-key="tools-title">Tools</h2>
+
+      <div class="resume__tools-category">
+        <h3 class="resume__tools-title editable" data-key="design-title">Design</h3>
+        <div class="resume__tools-icons">
+          <img src="./img/desing/logoFigma.svg" alt="Figma" class="resume__tool" />
+          <img src="./img/desing/logoAdobePhotoshop.svg" alt="Photoshop" class="resume__tool" />
+          <img src="./img/desing/logoAdobeIllustrator.svg" alt="Illustrator" class="resume__tool" />
+          <img src="./img/desing/logoAdobePremiere.svg" alt="Premiere" class="resume__tool" />
+          <img src="./img/desing/logoNotion.svg" alt="Notion" class="resume__tool" />
+          <img src="./img/desing/logoMeet.svg" alt="Meet" class="resume__tool" />
+        </div>
+      </div>
+
+      <div class="resume__tools-category">
+        <h3 class="resume__tools-title editable" data-key="nocode-title">No-code</h3>
+        <div class="resume__tools-icons">
+          <img src="./img/no-code/logoZapìer.svg" alt="Zapier" class="resume__tool" />
+          <img src="./img/no-code/logoWebflow.svg" alt="Webflow" class="resume__tool" />
+          <img src="./img/no-code/logoFramer.svg" alt="Framer" class="resume__tool" />
+          <img src="./img/no-code/logoWordpress.svg" alt="WordPress" class="resume__tool" />
+        </div>
+      </div>
+
+      <div class="resume__tools-category">
+        <h3 class="resume__tools-title editable" data-key="ai-title">Artificial Intelligence</h3>
+        <div class="resume__tools-icons">
+          <img src="./img/artoficial-intelligence/logoChatGPT.svg" alt="ChatGPT" class="resume__tool" />
+          <img src="./img/artoficial-intelligence/logoCopilot.svg" alt="Copilot" class="resume__tool" />
+          <img src="./img/artoficial-intelligence/logoMidjourney.svg" alt="Midjourney" class="resume__tool" />
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="resume__toolss">
+    <article class="resume__education">
+      <h2 class="resume__section-title editable" data-key="education-title">Education</h2>
+
+      <div class="resume__education-list">
+        <div class="resume__education-item active">
+          <h3 class="resume__education-year editable" data-key="edu-year-1">2023</h3>
+          <div class="resume__education-info">
+            <h4 class="resume__degree editable" data-key="degree-1">UI/UX</h4>
+            <p class="resume__tags editable" data-key="tags-1">тут будут теги</p>
+          </div>
+          <p class="resume__institution editable" data-key="institution-1">Coursera</p>
+        </div>
+
+        <div class="resume__education-item">
+          <h3 class="resume__education-year editable" data-key="edu-year-2">2017 - 2022</h3>
+          <div class="resume__education-info">
+            <h4 class="resume__degree editable" data-key="degree-2">Law</h4>
+            <p class="resume__tags editable" data-key="tags-2">тут будут теги</p>
+          </div>
+          <p class="resume__institution editable" data-key="institution-2">University of Kerala</p>
+        </div>
+
+        <div class="resume__education-item">
+          <h3 class="resume__education-year editable" data-key="edu-year-3">2017</h3>
+          <div class="resume__education-info">
+            <h4 class="resume__degree editable" data-key="degree-3">Graphic Design</h4>
+            <p class="resume__tags editable" data-key="tags-3">тут будут теги</p>
+          </div>
+          <p class="resume__institution editable" data-key="institution-3">Coursera</p>
+        </div>
+      </div>
+    </article>
+
+    <div class="resume__extra">
+      <article class="resume__interests">
+        <h2 class="resume__section-title editable" data-key="interests-title">Interests</h2>
+        <div class="resume__interests-list">
+          <p class="resume__interest editable" data-key="interest-1">branding</p>
+          <p class="resume__interest editable" data-key="interest-2">design</p>
+          <p class="resume__interest editable" data-key="interest-3">photography</p>
+          <p class="resume__interest editable" data-key="interest-4">artificial intelligence</p>
+          <p class="resume__interest editable" data-key="interest-5">illustration</p>
+          <p class="resume__interest editable" data-key="interest-6">typography</p>
+          <p class="resume__interest editable" data-key="interest-7">social networks</p>
+          <p class="resume__interest editable" data-key="interest-8">research</p>
+          <p class="resume__interest editable" data-key="interest-9">dron pilot</p>
+          <p class="resume__interest editable" data-key="interest-10">games</p>
+        </div>
+      </article>
+
+      <article class="resume__contact">
+        <h2 class="resume__section-title-contact editable" data-key="contact-title">Let's chat! I'm ready to work on exciting projects</h2>
+        <p class="resume__email editable" data-key="email">srkarthik.designscape@gmail.com</p>
+      </article>
+    </div>
+  </section>
+  <button class="Button" id="downloadBtn">Скачать</button>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script> -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+
 </html>
